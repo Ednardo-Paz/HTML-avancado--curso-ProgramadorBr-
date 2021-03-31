@@ -13,7 +13,7 @@ like.addEventListener('click', function(){
 
 let lista = document.getElementById('lista');
 
-let num = lista.getAttribute('num');
+let num = lista.getAttribute('data-num');
 
 let conteudo = ''
 
@@ -22,4 +22,19 @@ for(let i = 0; i < num; i++){
 }
 
 lista.innerHTML = conteudo*/
+
+
+
+let lista = document.getElementById('lista');
+
+let num = parseInt(lista.dataset.num);
+
+
+let conteudo = ''
+
+for(let i = 0; i < num; i++){
+    conteudo += `<li> número ${i} </li>`
+}
+
+lista.innerHTML = conteudo
 
