@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+
+        .container{
+            position: relative;
+            width: 640px;
+            height: 360px;
+            border-color:5px red;
+        }
+        .video{
+            width: 100%;
+        }
+        .controle{
+            opacity: 0;
+           position: absolute;
+            width: 640px;
+            height: 360px;
+            top: 0;
+            text-align: center;
+            
+        }
+        .controle:hover{
+            opacity: 1;
+            transition: all 1s ease;
+        }
+    
+        
+        .btn{
+           
+            position: relative;
+            width: 50px;
+            top: 100%;
+            padding: 10px;
+            transform: translatey(-100%);
+        }
+
+        
+           
+    </style>
+</head>
+
+
+<body>
+
+    <div class="container">
+
+        <video poster="/atributos/imagens/like.png" class="video" src="/video/media/how-it-feels.mp4">
+
+        </video>
+
+        <div id="video1" class="controle">
+            <img class="btn" onclick="retroceder()" src="/video/media/2x/round_replay_10_black_24dp.png" alt="">
+            <img class="btn" onclick="play()" src="/video/media/2x/round_play_arrow_black_24dp.png" alt="">
+            <img class="btn" onclick="stop()" src="/video/media/round_stop_black_24dp.png" alt="">
+            <img class="btn" onclick="adiantar()" src="/video/media/2x/round_forward_10_black_24dp.png" alt="">
+            <img class="btn" vdown src="/video/media/2x/round_volume_down_black_24dp.png" alt="">
+            <img class="btn" onclick="vup()" src="/video/media/2x/round_volume_up_black_24dp.png" alt="">
+
+
+        </div>
+
+    </div>
+            <script src="/video/video.js"></script>
+</body>
+
+</html>
