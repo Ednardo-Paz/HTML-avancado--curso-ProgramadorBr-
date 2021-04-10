@@ -1,0 +1,96 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    background-color: blue;
+    
+    padding: 20PX;
+
+
+    grid-template-areas: "a1 a1 a1 a1"
+                         "a2 a3 a4 a4"
+                         "a2 a5 a6 a7"
+                         "a8 a8 a8 a8";
+                         
+
+    grid-gap: 10px;                     
+   
+                        
+}
+.lista{
+    font-size: 2rem;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+   
+    
+    
+    
+    
+    
+    
+}
+
+
+
+
+.r1{
+    background-color: turquoise;
+}
+.r2{
+    background-color: tomato;
+}
+.r3{
+    background-color: yellowgreen;
+}
+.r4{
+    background-color: violet;
+}
+.r5{
+    background-color: teal;
+}
+.r6{
+    background-color: tan;
+}
+.r7{
+    background-color: yellow;
+}
+.r8{
+    background-color: brown;
+}
+
+.item1{
+    grid-area: a1;
+}
+.item2{
+    grid-area: a2;
+}
+.item3{
+    grid-area: a3;
+}
+.item4{
+    grid-area: a4;
+}
+.item5{
+    grid-area: a5;
+}
+.item6{
+    grid-area: a6;
+}
+.item7{
+    grid-area: a7;
+}
+.item8{
+    grid-area: a8;
+}
+
+
+
+
